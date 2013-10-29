@@ -1,0 +1,12 @@
+<h1>Editing your item</h1>
+
+Title: <%= @item.title %><br />
+Description: <%= @item.description %><br />
+Price: <%= @item.price %><br />
+
+<%= form_for @item, html: {class: "nifty_form"} do |f| %>
+  <%= f.text_field :title, placeholder: 'title' %><br />
+  <%= f.text_area :description, size: "60x12", placeholder: 'description' %><br />
+  <%= f.text_field :price, placeholder: 'price' %><br />
+  <%= f.submit "Edit Item" %>
+<% end %>
