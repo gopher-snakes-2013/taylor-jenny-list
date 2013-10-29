@@ -5,3 +5,4 @@ Description: <%= @item.description %><br />
 Price: <%= @item.price %><br />
 
 <%= link_to "Edit this item", edit_item_path %>
+<%= link_to "Delete this item", @item, :method => :delete %>
