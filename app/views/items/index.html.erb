@@ -7,3 +7,9 @@ Welcome to ShireList
   <%= f.text_field :price, placeholder: 'price' %><br />
   <%= f.submit "add item" %>
 <% end %>
+<br />
+<ul>
+	<% @items.each do |item| %>
+		<li><%= item.title %>: <%= item.description %> (<%= item.price %>)</li>
+	<% end %>
+</ul>	
