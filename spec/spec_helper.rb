@@ -36,3 +36,11 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 end
+
+def create_item(item_attributes)
+  visit '/'
+  fill_in "item_title", with: item_attributes[:title]
+  fill_in "item_description", with: item_attributes[:description]
+  fill_in "item_price", with: item_attributes[:price]
+  click_on "add item" 
+end

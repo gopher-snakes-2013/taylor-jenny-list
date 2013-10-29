@@ -3,10 +3,7 @@ class ItemsController < ApplicationController
 
 	def index
 		@item = Item.new
-	end
-
-	def new
-		@item = Item.new # when a form is shown in view, a new Ruby object is created.
+		@items = Item.all
 	end
 
 	def create
@@ -19,7 +16,6 @@ class ItemsController < ApplicationController
 
 	def show
 		@item = Item.find(params[:id])
-		@items = Item.all
 		p @item
 	end
 end
