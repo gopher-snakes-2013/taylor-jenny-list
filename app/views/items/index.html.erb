@@ -1,5 +1,6 @@
 Welcome to ShireList
 
+<h1>What would you like to post?</h1>
 <%= form_for @item, html: {class: "nifty_form"} do |f| %>
   <%= f.text_field :title, placeholder: 'title' %><br />
   <%= f.text_area :description, size: "60x12", placeholder: 'description' %><br />

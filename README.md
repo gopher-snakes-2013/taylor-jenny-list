@@ -1,5 +1,5 @@
 * User Stories *
 
-* Visitor can view listings
-* Visitor can post a listing
+* Visitor can post a listing - DONE
+* Visitor can view all listings - IN PROGRESS
 * Visitor can edit their listing via a secret link.
