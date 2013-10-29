@@ -1,6 +1,7 @@
 Railslist::Application.routes.draw do
   root :to => 'items#index'
-  resources :items, :only => [:index]
+  resources :items, :only => [:index, :new, :create, :show]
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
